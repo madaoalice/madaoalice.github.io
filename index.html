@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Madao.Design.Blog</title>
+	<meta charset="utf-8">
+	<meta name="Keywords" content="UI,Design,Designer,Blog,PS,AI,AE,Sketch">
+	<meta name="Description" content="Madao's Blog">
+	<link rel="stylesheet" type="text/css" href="./css/hello.css"/>
+	<link rel="stylesheet" type="text/css" href="./css/font-awesome-4.7.0/css/font-awesome.css"/>
+	<link rel="stylesheet" type="text/css" href="./css/jquery.fullPage.css" />
+	<script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="./js/jquery.fullPage.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+		    $('#fullpage').fullpage({
+		    	navigation: true
+		    });
+
+		    $('.main2 .nav li').click(function() {
+		    	$('.main2 .nav li').removeClass('active');
+		    	$(this).addClass('active');
+		    	
+		    	$('.main2 .work-show').hide();
+		    	var $target = $($(this).attr('data-target'));
+		    	$target.show();
+		    });
+		});
+	</script>
+</head>
+<body>
+	<div id="fullpage">
+		<div class="section home">
+			<img class="home-pic" src="./pic/top.jpg" alt="home">
+		</div>
+		<div class="section about">
+			<div class="main1">
+				<div class="me-pic">
+					<img class="photo" src="./pic/pic.png" alt="photo">
+					<img class="rectangle" src="./pic/img_rectangle.png" alt="rectangle">
+				</div>
+				<div class="introduce">
+					<h1 id="madao">Madao</h1>
+					<h2 id="UI">UI.Design</h2>
+					<div class="link-ic">
+						<a target=“_blank” href="http://xw124.zcool.com.cn/">
+							<img class="zcool" src="./pic/zcool.png" alt="ic_zcool">
+						</a>
+						<a target=“_blank” href="http://i.ui.cn/ucenter/121117.html">
+							<img class="iui" src="./pic/ui.png" alt="ic_iui">
+						</a>
+						<a target=“_blank” href="http://huaban.com/xmadao/">
+							<img class="huaban" src="./pic/hb.png" alt="ic_huban">
+						</a>
+					</div>
+					<p class="ts">Tool：Photoshop / Illustrator / After Effects / Sketch</p>
+					<p class="ts">Skill：Web / APP / Cartoon</p>
+					<p class="year">Graduation Date：2014.6</p>
+				</div>
+				
+			</div>
+		</div>
+		<div class="section work">
+			<div class="main2">
+				<div class="tabs">
+					<ul class="nav">
+						<li class="active" data-target="#work1">
+							<a href="javascript:void(0);">Web</a>
+						</li>
+						<li data-target="#work2">
+							<a href="javascript:void(0);">APP</a>
+						</li>
+						<li data-target="#work3">
+							<a href="javascript:void(0);">Cartoon</a>
+						</li>
+						<li data-target="#work4">
+							<a href="javascript:void(0);">Practice</a>
+						</li>
+						<li data-target="#work5">
+							<a href="javascript:void(0);">Doodle</a>
+						</li>
+					</ul>
+				</div>
+				<div class="work-show" id="work1">
+					<a class="work-pic" target=“_blank” href="./web-1.html">
+						<img class="pic00" src="./pic/work-pic/web/web-1-wead.jpg" alt="pic01">
+					</a>
+					<a class="work-pic" target=“_blank” href="./web-2.html">
+						<img class="pic00" src="./pic/work-pic/web/web-2-sem.jpg" alt="pic02">
+					</a>
+					<a class="work-pic" target=“_blank” href="./web-3.html">
+						<img class="pic00" src="./pic/work-pic/web/web-3-wesdom.jpg" alt="pic03">
+					</a>	
+					<a class="work-pic" target=“_blank” href="web-4.html">
+						<img class="pic00" src="./pic/work-pic/web/web-4-mh.jpg" alt="pic04">
+					</a>
+					<a class="work-pic" target=“_blank” href="web-5.html">
+						<img class="pic00" src="./pic/work-pic/web/web-5-gh.jpg" alt="pic05">
+					</a>
+					<a class="work-pic" target=“_blank” href="web-6.html">
+						<img class="pic00" src="./pic/work-pic/web/web-6-eiyouqian.jpg" alt="pic06">
+					</a>
+				</div>
+				<div class="work-show" id="work2" style="display: none;">
+					<a class="work-pic" target=“_blank” href="app-1.html">
+						<img class="pic00" src="./pic/work-pic/app/app-1-gh.jpg" alt="pic01">
+					</a>
+					<a class="work-pic" target=“_blank” href="app-2.html">
+						<img class="pic00" src="./pic/work-pic/app/app-2-iyouqian.jpg" alt="pic02">
+					</a>
+					<a class="work-pic" target=“_blank”>
+						<img class="pic00" src="./pic/work-pic/app/app-will.jpg" alt="pic03">
+					</a>	
+					<a class="work-pic" target=“_blank”>
+						<img class="pic00" src="./pic/work-pic/app/app-will.jpg" alt="pic04">
+					</a>
+					<a class="work-pic" target=“_blank”>
+						<img class="pic00" src="./pic/work-pic/app/app-will.jpg" alt="pic05">
+					</a>
+					<a class="work-pic" target=“_blank”>
+						<img class="pic00" src="./pic/work-pic/app/app-will.jpg" alt="pic06">
+					</a>
+				</div>
+				<div class="work-show" id="work3" style="display: none;">
+					<a class="work-pic" target=“_blank” href="ct-1.html">
+						<img class="pic00" src="./pic/work-pic/ct/ct-1-top.jpg" alt="pic01">
+					</a>
+					<a class="work-pic" target=“_blank” href="ct-2.html">
+						<img class="pic00" src="./pic/work-pic/ct/ct-2-top.jpg" alt="pic02">
+					</a>
+					<a class="work-pic" target=“_blank” href="ct-3.html">
+						<img class="pic00" src="./pic/work-pic/ct/ct-3-top.jpg" alt="pic03">
+					</a>	
+					<a class="work-pic" target=“_blank” href="ct-4.html">
+						<img class="pic00" src="./pic/work-pic/ct/ct-4-top.jpg" alt="pic04">
+					</a>
+					<a class="work-pic" target=“_blank” href="ct-5.html">
+						<img class="pic00" src="./pic/work-pic/ct/ct-5-top.jpg" alt="pic05">
+					</a>
+					<a class="work-pic" target=“_blank” href="ct-6.html">
+						<img class="pic00" src="./pic/work-pic/ct/ct-6-top.jpg" alt="pic06">
+					</a>
+				</div>
+				<div class="work-show" id="work4" style="display: none;">
+					<a class="work-pic" target=“_blank” href="p-1.html">
+						<img class="pic00" src="./pic/work-pic/p/p-1-top.jpg" alt="pic01">
+					</a>
+					<a class="work-pic" target=“_blank” href="p-2.html">
+						<img class="pic00" src="./pic/work-pic/p/p-2-top.jpg" alt="pic02">
+					</a>
+					<a class="work-pic" target=“_blank” href="p-3.html">
+						<img class="pic00" src="./pic/work-pic/p/p-3-top.jpg" alt="pic03">
+					</a>	
+					<a class="work-pic" target=“_blank” href="p-4.html">
+						<img class="pic00" src="./pic/work-pic/p/p-4-top.jpg" alt="pic04">
+					</a>
+					<a class="work-pic" target=“_blank” href="p-5.html">
+						<img class="pic00" src="./pic/work-pic/p/p-5-top.jpg" alt="pic05">
+					</a>
+					<a class="work-pic" target=“_blank” href="p-6.html">
+						<img class="pic00" src="./pic/work-pic/p/p-6-top.jpg" alt="pic06">
+					</a>
+				</div>
+				<div class="work-show" id="work5" style="display: none;">
+					<a class="work-pic" target=“_blank” href="d-1.html">
+						<img class="pic00" src="./pic/work-pic/d/d-1-top.jpg" alt="pic01">
+					</a>
+					<a class="work-pic" target=“_blank” href="d-2.html">
+						<img class="pic00" src="./pic/work-pic/d/d-2-top.jpg" alt="pic02">
+					</a>
+					<a class="work-pic" target=“_blank” href="d-3.html">
+						<img class="pic00" src="./pic/work-pic/d/d-3-top.jpg" alt="pic03">
+					</a>	
+					<a class="work-pic" target=“_blank” href="d-4.html">
+						<img class="pic00" src="./pic/work-pic/d/d-4-top.jpg" alt="pic04">
+					</a>
+					<a class="work-pic" target=“_blank” href="d-5.html">
+						<img class="pic00" src="./pic/work-pic/d/d-5-top.jpg" alt="pic05">
+					</a>
+					<a class="work-pic" target=“_blank” href="d-6.html">
+						<img class="pic00" src="./pic/work-pic/d/d-6-top.jpg" alt="pic06">
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="section article">
+			<div class="main3">
+				<div class="long">
+					<a class="title-real" href="http://www.ui.cn/detail/140537.html">pt、px、dp、dpi、ppi 解析</a>
+					<div class="a-title"></div>
+					<p class="a-p">首先，要先认清一个概念。点，是一个模糊不清的术语。在不同的情况下，它代表不同的东西，可能是绝对大小，可能是相对大小。在下文中，请特别注意：点在不同场景中代表不同的含义。几个关于点的重要含义：（为方便理解，根据经验写的定义，非官方定义）px：像素点，电子屏幕上组成图像的基本单位，像素点的大小由显示屏的硬件决定，px是相对大小。ppi：图像分辨率 peixl per inch ，表示图像每英寸所含的像素点数目。pt（印刷）：印刷点，表示实际的标准长度，绝对大小，1pt = 1/72英寸 = 0.35mm。dpi：打印分辨率，表示每英寸所能打印的点数，即打印精度，该值越高，图片约细腻…</p>
+					<a class="more" href="http://www.ui.cn/detail/140537.html">more <i class="fa fa-angle-right"></i>
+					</a>
+				</div>
+				<div class="short">
+					<div class="short-one">
+						<a class="title-real" href="http://www.ui.cn/detail/146560.html">简说切图原理｜新手切图指南</a>
+						<div class="a-title"></div>
+						<p class="a-p">本篇将iOS和Andriod重新解析一次，在理解分辨率前，要熟悉两个概念：非视网膜屏、视网膜屏。可以理解为普通屏、高清屏。非视网膜屏：过去手机使用的屏幕，分辨率很低,人眼能够看清屏幕上的像素点…</p>
+						<a class="more" href="http://www.ui.cn/detail/146560.html">more <i class="fa fa-angle-right"></i>
+						</a>
+					</div>
+					<div class="short-one">
+						<a class="title-real" href="http://www.ui.cn/detail/150078.html">手机端8px设计原理，理解笔记</a>
+						<div class="a-title"></div>
+						<p class="a-p">前文：本篇是一篇笔记，原文源于“淘宝UED-一张图解释手机端8px原理”的博文，由于目前市场上的手机机型出现了一些变化，Android ldpi、iPhone 3GS 已经淘汰了，Android mdpi也很少考虑，所以在此特别根据…</p>	
+						<a class="more" href="http://www.ui.cn/detail/150078.html">more <i class="fa fa-angle-right"></i>
+						</a>
+					</div>
+				</div>	
+			</div>
+		</div>
+</body>
+</html>
